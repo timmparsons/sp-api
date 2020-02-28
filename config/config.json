@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "third-party-api-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/thirdPartyApi/ThirdPartyApiWebPart.js",
+          "manifest": "./src/webparts/thirdPartyApi/ThirdPartyApiWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ThirdPartyApiWebPartStrings": "lib/webparts/thirdPartyApi/loc/{locale}.js"
+  }
+}
