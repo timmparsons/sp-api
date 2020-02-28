@@ -12,33 +12,7 @@ export default class ThirdpartyApi extends React.Component<IThirdPartyApiProps, 
       ApiOutput: []  
     };  
   }  
-    
-  /*async  PnpfilePermission(id, arrayId, title){ 
-    const list = sp.web.getList(`/sites/site/Lists/List`); 
-    const item = list.items.getById(3); 
-   
-    /* 
-    const folder = sp.web.getFolderByServerRelativePath('Shared%20Documents/some_folder'); 
-    const folderItem = await folder.getItem(); 
-   
-    const file = sp.web.getFileByServerRelativePath('Shared%20Documents/some_file.docx'); 
-    const fileItem = await file.getItem(); 
-    */  
-    
-    // Break role inheritence for unique permissions  
-   /* await item.breakRoleInheritance(false); // Method receives params 
-   
-    // Get user/group proncipal Id 
-    const { Id: principalId } = await sp.web.currentUser.select('Id').get(); 
-    // Get role definition Id 
-    const { Id: roleDefId } = await sp.web.roleDefinitions.getByName('Edit').get(); 
-   
-    // Assigning permissions 
-    await item.roleAssignments.add(principalId, roleDefId); 
-   
-    console.log(`Done`); 
-     
-    }*/  
+ 
   public componentDidMount(){  
     var myoutput = [];  
     this._getthirdpartyApi()  
