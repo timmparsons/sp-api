@@ -4,3 +4,4 @@ export interface IThirdPartyApiProps {
   description: string;
   myhttpclient:HttpClient;
 }
+
